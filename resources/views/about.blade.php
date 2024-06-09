@@ -2,6 +2,6 @@
 @section('header')
  @include('includes.header')
  @include('includes.about')
- @include('includes.call')
+ @include('includes.callToAction')
  @include('includes.team')
 @endsection

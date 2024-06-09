@@ -12,7 +12,7 @@ class Frontpages extends Controller
     }
     
     public function about(){
-        $title = "About";
+        $title = "About Us";
         return view ('about', compact('title'));
     }
     
@@ -55,4 +55,5 @@ class Frontpages extends Controller
         $title = "404 Error";
         return view ('error', compact('title'));
     }
+    
 }    

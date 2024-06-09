@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontpages;
+use App\Http\Controllers\DashController;
 Route::get('/', function () {
-    return view('test');
+    return view('');
 });
 
 Route::get('home',[Frontpages::class,'home'])->name('home');
@@ -16,3 +17,7 @@ Route::get('callToAction',[Frontpages::class,'callToAction'])->name('callToActio
 Route::get('appointment',[Frontpages::class,'appointment'])->name('appointment');
 Route::get('testimonial',[Frontpages::class,'testimonial'])->name('testimonial');
 Route::get('error', [Frontpages::class, 'error'])->name('error');
+
+Route::get('dashboard',[DashController::class,'dashboard'])->name('dashboard');
+Route::get('register',[DashController::class,'register'])->name('register');
+Route::get('login',[DashController::class,'login'])->name('login');
